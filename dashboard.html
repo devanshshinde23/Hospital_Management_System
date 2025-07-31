@@ -5,46 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="project.css">
+     <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
 
 </head>
 <body>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-    <div class="card">
-      <img src="" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
+    <div id="header">
+        <div class="navbar">
+            <nav>
+                <h1 class="logo"> <i class="fa-solid fa-user-doctor"></i> MediTrack </h1>
+                <ul class="nav-links">
+                    <!-- <li><a href="index.html">Home</a></li> -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="#container">Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+
     </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
+
+        <!-- About Section -->
+     
+    <div id="about">
+        <div class="about_container">
+            <div class="row">
+                <!-- <div class="about-col-1">
+                    <img src="./MediTrack_logo.png">
+                    style="height:550px; width: 350px;"
+                </div> -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About MediTrack</h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla temporibus? Quos
+                        reiciendis, pariatur architecto ab ducimus iste, modi autem quo itaque laboriosam magni ipsa
+                        debitis? Repellat doloribus delectus eligendi.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi voluptas reiciendis odio,
+                        recusandae id minus tempore in delectus corporis nemo. Ratione quos voluptate mollitia ipsa
+                        dolore perspiciatis tempore dolorum quaerat?
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Full stack Developer </span><br>Desing web/app Interface</li>
+                            <li><span>Web Development</span><br>Web app Development </li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023</span><br>Training+ Internship on Python Development at TechnoHacks </li>
+                            <li><span>2024</span><br>Cybersecurity Virtual Internship program at Paloalto Networks
+                                supported by EduSkills</li>
+                            <li><span>2025</span><br>Jr.Software Engineer Intern at Cravita Technologies Pvt. Ltd. </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2019-2022</span><br>Diploma in Computer Engineering</li>
+                            <li><span>2022-2025</span><br>B.Tech in Information Technology </li>
+                            <li><span>2025</span><br>Full Stack Developer Course </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
+    
+    <!-- Services  -->
+
+    <div id="Services">
+        <div class="ser-container">
+            <h1 class="sub-title"> Doctors </h1>
+            <div class="services-list">
+                <div>
+                    <img src="data:image/jpeg;base64,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" alt="">
+                    <h2>Web/App Designing </h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis ea cumque, quisquam porro
+                        repudiandae inventore aut autem! Magni accusantium voluptatibus .</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis ea cumque, quisquam porro
+                        repudiandae inventore aut autem! Magni accusantium voluptatibus .</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis ea cumque, quisquam porro
+                        repudiandae inventore aut autem! Magni accusantium voluptatibus .</p>
+                    <a href="#">Learn More</a>
+                </div>
+                 <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quis ea cumque, quisquam porro
+                        repudiandae inventore aut autem! Magni accusantium voluptatibus .</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-</div>
+
 </body>
 </html>

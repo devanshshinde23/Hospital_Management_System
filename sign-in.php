@@ -14,7 +14,9 @@
         if($stmt_result->num_rows > 0){
             $data = $stmt_result->fetch_assoc();
             if($data['Password']=== $password){
-                echo "Login Succesfully";
+                 // ✅ Redirect to dashboard.html
+                header("Location: dashboard.html");
+                exit(); // Always use exit() after header redirection
             }else{
                 echo "Invalid email or password ";
             }
