@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="project.css">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+     <title>Document</title>
+    <!-- <link rel="stylesheet" href="project.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,90 +14,194 @@
 </head>
 
 </head>
-
 <body>
     <div id="header">
         <div class="navbar">
             <nav>
                 <h1 class="logo"> <i class="fa-solid fa-user-doctor"></i> MediTrack </h1>
+                 <i id="bar" class="fa-solid fa-bars"></i>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="index.html">Home</a></li> -->
                     <li><a href="#about">About</a></li>
                     <li><a href="doctors.html">Doctors</a></li>
                     <li><a href="#container">Appointment</a></li>
+                    <li><a href="signin.html">sign-in/ sign-up</a></li>
                 </ul>
             </nav>
         </div>
 
     </div>
 
-    
-    <div class="container" id="container">
-        <div class="sign-up">
-            <form action="connect.php" method="post">
-                <h1>Create account</h1>
-                <br>
-                <!-- <div class="icons">
-                <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
-
-                <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
-
-                <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
-
-                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-
-                </div> -->
-                <span> or email for registeration</span>
-                <input type="text" placeholder="Name" required name="Name" >
-                <input type="tel" placeholder="Phone_No" required name="Phone_No">
-                <input type="number" placeholder="Age" required name="Age">
-                <input type="text" placeholder="Gender" required name="Gender">
-                <input type="text" placeholder="Email" required name="Email">
-                <input type="Password" placeholder="Password" required name="Password">
-                <button >Sign-up</button>
-           </form>
+    <div class="main">
+        <div class="mainText">
+            <h1>The Hospital that <br>
+                care for You </h1>
+            <h3>Best Team's </h3>
+            <button>Show More </button>
         </div>
-           <div class="sign-in">
-            <form action="sign-in.php" method="post">
-                <h1>Sign-in</h1><br>
-                <!-- <div class="icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
-
-                    <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
-
-                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
-
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-
-                </div> -->
-                <span> or email for password</span>
-                <input type="text" placeholder="Email" name="Email" required/>
-                <input type="password" placeholder="Password" name="Password" required />
-                <a href="#">Forgot password</a>
-                <button type="submit" >sign-in</button><br><br>
-           </form>
-        </div>
-        <div class="toogle-container">
-            <div class="toogle">
-                <div class="toogle-panel toogle-left" >
-                    <h1> Welcome User!</h1>
-                    <p> If You Already have a account</p>
-                    <button class="hidden" id="login">Sign-in</button>
-                </div>
-                <div class="toogle-panel toogle-right"  >
-                    <h1> Hello User</h1>
-                    <p> If You don't have a account</p>
-                    <button class="hidden" id="register">Sign-up</button>
-                </div>
-            </div>
-        </div>        
+         <img src="./assets/mains.png" alt="" height="550px" width="550px">
     </div>
 
+    <div id="doctor">
+            <div class="head">
+                <h1>Our Doctor's</h1>
+            </div>
+            <div class="teams">
+                <div class="card">
+                    <img src="./assets/dt1.jpg" alt="">
+                    <p>Devansh </p>
+                    <p>Devansh Santosh Shinde </p>
+
+                </div>
+                <div class="card">
+                    <img src="./assets/dt2.jpg" alt="">
+                    <p>Adinath </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis?</p>
+
+                </div>
+                <div class="card">
+                    <img src="./assets/dt3.jpg" alt="">
+                    <p>Ganesh </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis?</p>
+
+                </div>
+            </div>
+    </div>
+
+        <div id="speciality">
+            <div class="head">
+                <h1>Our Speciality's</h1>
+            </div>
+            <div class="speciality">
+                <div class="spCard">
+                    <img src="./assets/s1.png" alt="">
+                    <p><b>Knee Surgery</b></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia.</p>
+
+                </div>
+                <div class="spCard">
+                    <img src="./assets/s2.png" alt="">
+                    <p>Knee Surgery</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia.</p>
+
+                </div>
+                <div class="spCard">
+                    <img src="./assets/s3.png" alt="">
+                    <p>Knee Surgery</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="patient">
+            <div class="head">
+                <h1>Patient Review's</h1>
+            </div>
+            <div class="reviews">
+                <div class="patientReview">
+                    <img src="./assets/p1.png" alt="">
+                    <img src="./assets/p2.png" alt="">
+
+                </div>
+                <div class="patientReview">
+                    <img src="./assets/p3.jpg" alt="">
+                    <img src="./assets/p4.jpg" alt="">
+
+                </div>
+                  <div class="patientReview">
+                    <img src="./assets/p5.jpg" alt="">
+                    <img src="./assets/p6.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="container">
+             <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me </h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> devanshshinde2316@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> 9082767522</p>
+                    <div class="Social-icons">
+                        <a href="https://www.linkedin.com/in/devanshshinde23/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="./assets/DEVANSH (Resume).pdf" download class="button btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name " required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rowa="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+              </div>
+          </div>
+        </div>
+
+        
+
+
+        <div class="footer">
+            <div class="text">
+                <h3>About Us</h3>
+                <p>24 Hours</p>
+                <p>Top Doctor</p>
+                <p>Best Care</p>
+                <p>Patient</p>
+                <p></p>
+
+            </div>
+            <div class="text">
+                <h3>Speciality</h3>
+                <p>Knee surgery</p>
+                <p>Spin surgery</p>
+                <p>Leg surgery</p>
+                <p>Tendon surgery</p>
+                <p></p>
+
+            </div>
+            <div class="text">
+                <h3>Best Teams</h3>
+                <p>Doctors</p>
+                <p>Nursing</p>
+                <p>Staff</p>
+                <p>Hospital</p>
+                <p></p>
+
+            </div>
+            <div class="text">
+                <h3>Address</h3>
+                <p>Near MG Road</p>
+                <p>Galaxy Care</p>
+                <p>333-09093</p>
+                <p>09-883-090</p>
+                
+
+            </div>
+        </div>
+
+          
+
+     <div class="detail">
+            <button id="closeBtn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="content">
+                
+            </div>
+    </div>
+
+
     
 
-    <script src="./project.js"></script>
+<script src="./dashboard.js"></script>
+
 </body>
-
 </html>
-
-<!-- http://localhost/WD%20Project/Project.html#container -->

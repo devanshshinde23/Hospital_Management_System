@@ -12,6 +12,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    /* height: 230vh; */
 
 }
 
@@ -20,7 +21,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background: linear-gradient(rgb(234, 23, 128));
+    background: linear-gradient(rgb(11, 76, 76));
 
 }
 
@@ -77,7 +78,7 @@ nav ul li a{
     margin: 15px 0 10px;
  }
  .container button {
-    background-color:  rgb(234, 23, 128);
+    background-color:  rgb(12, 185, 185);
     color: white;
     padding: 10px 45px;
     border: 1px solid transparent;
@@ -185,9 +186,9 @@ nav ul li a{
 }
 
 .toogle {
-    background-color: rgb(234, 23, 128);
+    background-color: (rgb(11, 76, 76));
     height: 100%;
-    background: linear-gradient(to right ,hwb(330 11% 13%), rgb(218, 29, 123));
+    background: linear-gradient(to right ,rgb(15, 149, 149), rgb(15, 149, 149));
     color: white;
     position: relative;
     left: -100%;
@@ -234,7 +235,7 @@ nav ul li a{
 /* -----------about ------------------ */
 
 #about {
-    padding: 80px 0;
+    padding: 20px 0;
     color: #ababab;
 }
 
