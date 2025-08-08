@@ -51,7 +51,7 @@ document.getElementById("signin-form").addEventListener("submit", (e) => {
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi ex accusantium eius magnam, esse repellat veritatis, consectetur aut perspiciatis dolor labore sapiente.</p>
         </div>
         `
-       closeBtn.addEventListener("click", function(){
+        closeBtn.addEventListener("click", function(){
         document.querySelector(".detail").style.display="none"
        })
     })

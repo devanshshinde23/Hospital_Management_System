@@ -364,3 +364,7 @@ nav ul li a{
     background: #ff004f;
     transform: translateY(-10px);
 }
+
+.Social-icons a i {
+    margin-top:  50px;
+}
